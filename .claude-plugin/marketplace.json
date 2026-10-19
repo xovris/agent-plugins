@@ -1,0 +1,17 @@
+{
+  "name": "xovris",
+  "owner": {
+    "name": "Xovris",
+    "email": "support@xovris.ai"
+  },
+  "metadata": {
+    "description": "Xovris for Claude Code - it watches what you run, finds what is wrong, fixes it and proves the fix."
+  },
+  "plugins": [
+    {
+      "name": "xovris",
+      "source": "./",
+      "description": "Xovris inside Claude Code: it watches what you run, finds what is wrong, fixes it and proves the fix."
+    }
+  ]
+}
