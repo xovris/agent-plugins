@@ -1,0 +1,17 @@
+{
+  "name": "xovris",
+  "owner": {
+    "name": "Xovris",
+    "email": "support@xovris.ai"
+  },
+  "metadata": {
+    "description": "Xovris for Cursor - its tools over MCP and its way of working as a skill.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "xovris",
+      "source": "./"
+    }
+  ]
+}
