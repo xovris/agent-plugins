@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "xovris",
+  "version": "0.2.0",
+  "description": "Xovris inside your AI agent: it watches what you run - sites, apps, APIs, domains, email, servers, networks and devices - finds what is wrong, fixes it and proves the fix. One install adds Xovris's tools and its way of working to every agent that reads Agent Plugins.",
+  "author": {
+    "name": "Xovris",
+    "email": "support@xovris.ai",
+    "url": "https://xovris.ai"
+  },
+  "homepage": "https://xovris.ai/developers/",
+  "repository": "https://github.com/xovris/agent-plugins",
+  "license": "Apache-2.0",
+  "keywords": ["xovris", "monitoring", "incidents", "repair", "uptime", "security", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Xovris",
+        "brandColor": "#1FBF84",
+        "defaultPrompt": "Ask Xovris whether everything I run is working, and fix what is not."
+      }
+    }
+  }
+}
