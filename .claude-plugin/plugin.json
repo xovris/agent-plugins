@@ -1,0 +1,21 @@
+{
+  "name": "xovris",
+  "displayName": "Xovris",
+  "version": "0.2.0",
+  "description": "Xovris inside Claude Code: it watches what you run, finds what is wrong, fixes it and proves the fix - its tools over MCP and its way of working as a skill.",
+  "author": {
+    "name": "Xovris",
+    "email": "support@xovris.ai",
+    "url": "https://xovris.ai"
+  },
+  "homepage": "https://xovris.ai/developers/",
+  "repository": "https://github.com/xovris/agent-plugins",
+  "license": "Apache-2.0",
+  "keywords": ["xovris", "monitoring", "incidents", "repair", "uptime", "security", "mcp"],
+  "mcpServers": {
+    "xovris": {
+      "type": "http",
+      "url": "https://api.xovris.ai/v1/mcp"
+    }
+  }
+}
