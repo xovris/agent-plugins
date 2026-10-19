@@ -1,0 +1,11 @@
+{
+  "name": "xovris",
+  "version": "0.2.0",
+  "description": "Xovris inside Gemini CLI and Antigravity CLI: it watches what you run, finds what is wrong, fixes it and proves the fix.",
+  "mcpServers": {
+    "xovris": {
+      "httpUrl": "https://api.xovris.ai/v1/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
