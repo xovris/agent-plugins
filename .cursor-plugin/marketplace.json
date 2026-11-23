@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Xovris for Cursor - its tools over MCP and its way of working as a skill.",
-    "version": "0.2.0"
+    "version": "0.3.5"
   },
   "plugins": [
     {

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "xovris",
-  "version": "0.2.0",
+  "version": "0.3.5",
   "description": "Xovris inside your AI agent: it watches what you run - sites, apps, APIs, domains, email, servers, networks and devices - finds what is wrong, fixes it and proves the fix. One install adds Xovris's tools and its way of working to every agent that reads Agent Plugins.",
   "author": {
     "name": "Xovris",

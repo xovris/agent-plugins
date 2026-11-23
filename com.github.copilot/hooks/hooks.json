@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "description": "Xovris's way of working on code, in GitHub Copilot (its CLI, and VS Code's chat on the Copilot harness): at the start it hands the agent the repository's test command and what it points to; at every stop it holds done until no existing test is weakened, a test proves the change and the tests pass. The events are named as Claude Code names them, so Copilot sends the same fields the one script reads; the plugin's folder is CLAUDE_PLUGIN_ROOT, which Copilot sets for a plugin's hooks (read from copilot 1.0.112 itself, 14 Nov 2026).",
+  "hooks": {
+    "SessionStart": [
+      { "type": "command", "bash": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/xovris-code.mjs\" start", "powershell": "node \"$env:CLAUDE_PLUGIN_ROOT/hooks/xovris-code.mjs\" start", "timeoutSec": 600 }
+    ],
+    "Stop": [
+      { "type": "command", "bash": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/xovris-code.mjs\" stop", "powershell": "node \"$env:CLAUDE_PLUGIN_ROOT/hooks/xovris-code.mjs\" stop", "timeoutSec": 600 }
+    ]
+  }
+}

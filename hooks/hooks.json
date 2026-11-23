@@ -1,0 +1,19 @@
+{
+  "description": "Xovris's way of working on code: at the start it runs the repository's own tests and hands the agent what fails; at every stop it holds done until no existing test is weakened, a test proves the change and the tests pass.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/xovris-code.mjs\" start", "timeout": 600 }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/xovris-code.mjs\" stop", "timeout": 600 }
+        ]
+      }
+    ]
+  }
+}
